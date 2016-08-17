@@ -1,4 +1,4 @@
-# AirBnb Api for Android
+# AirBnb Android
 An Android front end for https://github.com/ccmxy/AirBnb-Api-NodeJS which makes use of users' GPS or network to find their location and sort listings by city or state.
 
 ### Screenshots

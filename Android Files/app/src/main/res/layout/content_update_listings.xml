@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.UpdateOrDeleteListingsActivity"
+    tools:showIn="@layout/activity_update_listings">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Edit the values of your choice and press &quot;Submit Changes.&quot;"
+        android:id="@+id/titleEditText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/titleEditText"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleEditText"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_alignRight="@+id/noGuestsEditText"
+            android:layout_alignEnd="@+id/noGuestsEditText"
+            android:layout_alignLeft="@+id/noGuestsEditText"
+            android:layout_alignStart="@+id/noGuestsEditText" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/noGuestsEditText"
+            android:layout_below="@+id/titleEditText"
+            android:layout_alignLeft="@+id/priceEditText"
+            android:layout_marginTop="20dp"
+            android:layout_alignStart="@+id/priceEditText"
+            android:layout_alignRight="@+id/priceEditText"
+            android:layout_alignEnd="@+id/priceEditText" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/priceEditText"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/noGuestsEditText"
+            android:layout_alignRight="@+id/submitChangesButton"
+            android:layout_alignEnd="@+id/submitChangesButton"
+            android:layout_alignLeft="@+id/submitChangesButton"
+            android:layout_alignStart="@+id/submitChangesButton" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bootstrapSize="md"
+            app:bootstrapBrand="info"
+
+            android:id="@+id/cityEditText"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/priceEditText"
+            android:layout_alignStart="@+id/priceEditText"
+            android:layout_alignRight="@+id/priceEditText"
+            android:layout_alignEnd="@+id/priceEditText" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stateEditText"
+
+            android:layout_below="@+id/cityEditText"
+            android:layout_alignLeft="@+id/cityEditText"
+            android:layout_alignStart="@+id/cityEditText"
+            android:layout_marginTop="34dp"
+            android:layout_alignRight="@+id/cityEditText"
+            android:layout_alignEnd="@+id/cityEditText" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Changes"
+            app:roundedCorners="true"
+            app:bootstrapBrand="primary"
+            android:id="@+id/submitChangesButton"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price per night:"
+            android:id="@+id/textView3"
+            android:layout_alignBottom="@+id/priceEditText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number guests:"
+            android:id="@+id/textView2"
+            android:layout_alignBottom="@+id/noGuestsEditText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City:"
+            android:id="@+id/textView4"
+            android:layout_above="@+id/stateEditText"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State:"
+            android:id="@+id/textView5"
+            android:layout_alignBottom="@+id/stateEditText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Listing"
+        app:roundedCorners="true"
+
+        android:layout_marginTop="10dp"
+        app:bootstrapBrand="danger"
+        android:id="@+id/showCommentsButton"
+        app:buttonMode="regular"
+        app:showOutline="false"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

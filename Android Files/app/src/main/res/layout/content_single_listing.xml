@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.ListingWithMapActivity"
+    tools:showIn="@layout/activity_single_listing">
+
+    <TextView
+        style="@style/TextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Title"
+        android:id="@+id/titleTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    <TextView
+        style="@style/TextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="NumGuests"
+        android:id="@+id/noGuestsTextView"
+        android:layout_below="@+id/titleTextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        style="@style/TextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Price"
+        android:id="@+id/priceTextview"
+        android:layout_below="@+id/noGuestsTextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        style="@style/TextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="City, State"
+        android:id="@+id/cityStateTextView"
+        android:layout_below="@+id/priceTextview"
+        android:layout_centerHorizontal="true" />
+
+    <fragment
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/fragment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Comments"
+        android:layout_marginBottom="10dp"
+        app:roundedCorners="true"
+        app:bootstrapBrand="primary"
+        android:id="@+id/showCommentsButton"
+        android:layout_above="@+id/fragment"
+        android:layout_centerHorizontal="true" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Listings"
+        app:roundedCorners="true"
+        app:showOutline="true"
+        app:bootstrapBrand="primary"
+        android:id="@+id/listOfListings"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/showCommentsButton"
+        android:layout_alignLeft="@+id/showCommentsButton"
+        android:layout_alignStart="@+id/showCommentsButton"
+        android:layout_alignRight="@+id/showCommentsButton"
+        android:layout_alignEnd="@+id/showCommentsButton" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Profile"
+        app:roundedCorners="true"
+        app:showOutline="true"
+        android:layout_marginBottom="10dp"
+        app:bootstrapBrand="primary"
+        android:id="@+id/yourProfileButton"
+        android:layout_above="@+id/listOfListings"
+        android:layout_alignLeft="@+id/listOfListings"
+        android:layout_alignStart="@+id/listOfListings"
+        android:layout_alignRight="@+id/listOfListings"
+        android:layout_alignEnd="@+id/listOfListings" />
+
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        app:roundedCorners="true"
+        app:bootstrapBrand="success"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/updateButton"
+        android:visibility="gone"
+
+        android:layout_above="@+id/yourProfileButton"
+        android:layout_alignRight="@+id/yourProfileButton"
+        android:layout_alignEnd="@+id/yourProfileButton"
+        android:layout_alignLeft="@+id/yourProfileButton"
+        android:layout_alignStart="@+id/yourProfileButton" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/commentsListView"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/fragment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp" />
+
+</RelativeLayout>

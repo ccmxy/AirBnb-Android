@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AirbnbApi</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_new_listing">NewListingActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_listing">ListingActivity</string>
+    <string name="title_activity_user_lat_long">UserLatLongActivity</string>
+    <string name="title_activity_listing_by_state">ListingByStateActivity</string>
+    <string name="title_activity_user_lat_long_with_city">UserLatLongWithCityActivity</string>
+    <string name="title_activity_listings_by_city">ListingsByCityActivity</string>
+    <string name="title_activity_deleted_listing_page">DeletedListingPage</string>
+    <string name="title_activity_login_register">LoginRegisterActivity</string>
+    <string name="title_activity_listing_comments">ListingCommentsActivity</string>
+    <string name="title_activity_update_listings">UpdateListingsActivity</string>
+    <string name="title_activity_user_overview">UserOverviewActivity</string>
+    <string name="title_activity_user_listings">UserListingsActivity</string>
+    <string name="menu_settings">LemmeGo</string>
+    <string name="title_activity_menu_test">MenuTestActivity</string>
+
+    <array name="bootstrap_dropdown_example_data">
+        <item>First item</item>
+        <item>Second item</item>
+        <item>{dropdown_disabled}Disabled item</item>
+        <item>{dropdown_header}Dropdown header</item>
+        <item>Fourth item</item>
+        <item>Fifth item</item>
+        <item>{dropdown_separator}</item>
+        <item>Separated item</item>
+    </array>
+    <string name="title_activity_blash">BLASH</string>
+
+</resources>

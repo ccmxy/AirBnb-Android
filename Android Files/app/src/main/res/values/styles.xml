@@ -1,0 +1,127 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextColor">
+        <item name="android:textColor">#EE2F81</item>
+    </style>
+
+    <style name="Background">
+        <item name="android:background">#ADDEFA</item>
+    </style>
+
+    <style name="TextColor1">
+        <item name="android:textColor">#ECB200</item>
+    </style>
+
+    <style name="Background1">
+        <item name="android:background">#D54E78</item>
+    </style>
+    <!--D44380-->
+
+    <style name="TextColor2">
+        <item name="android:textColor">#829E18</item>
+    </style>
+
+    <style name="Background2">
+        <item name="android:background">#671E46</item>
+    </style>
+
+
+    <style name="TextColor3">
+        <item name="android:textColor">#CB2C1A</item>
+    </style>
+
+    <style name="Background3">
+        <item name="android:background">#D75D7F</item>
+    </style>
+
+
+    <style name="TextColor4">
+        <item name="android:textColor">#D96D3A</item>
+    </style>
+
+    <style name="Background4">
+        <item name="android:background">#90C2EE</item>
+    </style>
+
+    <style name="TextColor5">
+        <item name="android:textColor">#5A403A</item>
+    </style>
+
+    <style name="Background5">
+        <item name="android:background">#D75D7F</item>
+    </style>
+
+
+    <style name="example_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">@dimen/default_padding</item>
+        <item name="android:paddingBottom">32dp</item>
+    </style>
+
+    <style name="description_label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="example_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/micro_padding</item>
+    </style>
+
+    <style name="wrapping_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/micro_padding</item>
+    </style>
+
+
+    <style name="progress_weight_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/micro_padding</item>
+    </style>
+
+    <style name="progress_example">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2.5</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="home_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="bootstrapBrand">primary</item>
+        <item name="bootstrapSize">lg</item>
+        <item name="showOutline">true</item>
+        <item name="roundedCorners">true</item>
+    </style>
+
+
+</resources>
